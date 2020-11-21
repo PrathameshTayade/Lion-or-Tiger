@@ -112,7 +112,7 @@ public class MainActivity extends AppCompatActivity {
             }
 
         }
-        if (i == 9)
+        if (i == 9&&!isGameOver)
         {
             MediaPlayer mediaPlayer = MediaPlayer.create(this,R.raw.draw);
             mediaPlayer.start();
@@ -137,6 +137,8 @@ public class MainActivity extends AppCompatActivity {
             imageViewToGetNull.setAlpha(0.2f);
             playerChoices[index]=Player.NONE;
             imageViewToGetNull.setTranslationX(0);
+            imageViewToGetNull.setRotation(0);
+
 
         }
         currentPlayer=Player.LION;
